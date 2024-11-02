@@ -106,7 +106,7 @@ func operation(operator string, values, data interface{}) interface{} {
 		return _in(parsed[0], parsed[1])
 	}
 
-	if operator == "no_in" {
+	if operator == "not_in" {
 		return !_in(parsed[0], parsed[1])
 	}
 
