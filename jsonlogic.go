@@ -164,7 +164,7 @@ func _in(value interface{}, values interface{}) bool {
 		return false
 	}
 
-	if isString(values) {
+	if isString(values) && isString(value) {
 		return strings.Contains(values.(string), value.(string))
 	}
 
