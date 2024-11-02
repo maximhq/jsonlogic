@@ -176,6 +176,7 @@ func _in(value interface{}, values interface{}) bool {
 					return true
 				}
 			}
+			return false;
 		}
 		return strings.Contains(values.(string), value.(string))
 	}
