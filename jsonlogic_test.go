@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/diegoholiveira/jsonlogic/v3/internal"
+	"github.com/maximhq/jsonlogic/v3/internal"
 	"github.com/stretchr/testify/assert"
 )
 

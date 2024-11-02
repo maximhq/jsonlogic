@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/diegoholiveira/jsonlogic/v3"
+	"github.com/maximhq/jsonlogic/v3"
 )
 
 func TestIssue83(t *testing.T) {
