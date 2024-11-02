@@ -164,7 +164,19 @@ func _in(value interface{}, values interface{}) bool {
 		return false
 	}
 
-	if isString(values) && isString(value) {
+	if isString(values) {
+		if isSlice(value){
+			for _, element := range value.([]interface{}) {
+				if isNumber(element) {
+					if toNumber(element) == value {
+						return true
+					}
+				}				
+				if values.(string) == element.(string) {
+					return true
+				}
+			}
+		}
 		return strings.Contains(values.(string), value.(string))
 	}
 
